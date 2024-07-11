@@ -1,5 +1,8 @@
-import 'package:film/page2.dart';
+import 'package:film/Bloc/movie_bloc.dart';
+import 'package:film/Repository/ModelClass/MovieModel.dart';
+import 'package:film/UI/page2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,6 +15,13 @@ class Screen1 extends StatefulWidget {
 }
 
 class _Screen1State extends State<Screen1> {
+  late MovieModel data;
+  @override
+  void initState() {
+    BlocProvider.of<MovieBloc>(context).add(FetchMovie());
+    // TODO: implement initState
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,8 +106,19 @@ class _Screen1State extends State<Screen1> {
             SizedBox(
               width: 500.w,
               height: 300.h,
-              child: ListView.separated(
-                itemCount: 20,
+              child: BlocBuilder<MovieBloc, MovieState>(
+  builder: (context, state) {
+
+    if(state is MovieBlocLoading){
+      return Center(child: CircularProgressIndicator(),);
+    }
+    if(state is MovieBlocError){
+      return Center(child: Text("Error"),);
+    }
+    if(state is MovieBlocLoaded){
+    data=BlocProvider.of<MovieBloc>(context).movieModel;
+    return ListView.separated(
+                itemCount: data.movies!.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, position) {
                   return Container(
@@ -113,7 +134,7 @@ class _Screen1State extends State<Screen1> {
                           width: 220.w,
                           height: 225.h,
                           child: TextButton(onPressed: () { Navigator.of(context).push(MaterialPageRoute(builder: (_)=>Screen2())); },
-                          child: Image.asset('assets/a.png')),
+                          child: Image.network(data.movies![position].posterPath.toString())),
                         ),
                         Text(
                           'Spiderman: No Way\nHome',
@@ -171,7 +192,11 @@ class _Screen1State extends State<Screen1> {
                     width: 10.w,
                   );
                 },
-              ),
+              );}else{
+      return SizedBox();
+    }
+  },
+),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10, top: 10),
