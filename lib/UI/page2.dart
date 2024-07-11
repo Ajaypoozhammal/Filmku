@@ -2,6 +2,7 @@ import 'package:film/page1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Screen2 extends StatefulWidget {
   const Screen2({super.key});
@@ -34,7 +35,7 @@ class _Screen2State extends State<Screen2> {
                           child: Icon(Icons.arrow_back,
                               size: 35, color: Colors.white)),
                       SizedBox(
-                        width: 250,
+                        width: 250.w,
                       ),
                       Icon(Icons.more_horiz, size: 35, color: Colors.white)
                     ],
@@ -43,14 +44,14 @@ class _Screen2State extends State<Screen2> {
                 Padding(
                   padding: const EdgeInsets.only(top: 280),
                   child: Container(
-                    width: 375,
-                    height: 600,
+                    width: 375.w,
+                    height: 600.h,
                     decoration: ShapeDecoration(
                       color: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
+                          topLeft: Radius.circular(10.r),
+                          topRight: Radius.circular(10.r),
                         ),
                       ),
                     ),
@@ -62,17 +63,17 @@ class _Screen2State extends State<Screen2> {
                     children: [
                       Text(
                         'Spiderman: No Way\nHome',
-                        style: TextStyle(
+                    style: GoogleFonts.mulish(
+                      textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 20,
-                          fontFamily: 'Mulish',
+                          fontSize: 20.sp,
                           fontWeight: FontWeight.w700,
-                          height: 0,
                           letterSpacing: 0.40,
+                      )
                         ),
                       ),
                       SizedBox(
-                        width: 100,
+                        width: 100.w,
                       ),
                       Icon(
                         Icons.bookmark_border_sharp,
@@ -106,15 +107,14 @@ class _Screen2State extends State<Screen2> {
                       ),
                       Text(
                         '9.1/10 IMDb',
-                        style: TextStyle(
+                        style: GoogleFonts.mulish(
+                          textStyle: TextStyle(
                           color: Color(0xFF9B9B9B),
-                          fontSize: 12,
-                          fontFamily: 'Muli',
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w400,
-                          height: 0,
                           letterSpacing: 0.24,
                         ),
-                      ),
+                      ),),
                     ],
                   ),
                 ),
@@ -123,8 +123,8 @@ class _Screen2State extends State<Screen2> {
                   child: Row(
                     children: [
                       Container(
-                        width: 78,
-                        height: 30,
+                        width: 78.w,
+                        height: 30.h,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 4),
                         decoration: ShapeDecoration(
@@ -136,13 +136,12 @@ class _Screen2State extends State<Screen2> {
                         child: Center(
                           child: Text(
                             'ACTION',
-                            style: TextStyle(
+                            style: GoogleFonts.mulish(
+                              textStyle: TextStyle(
                               color: Color(0xFF87A3E8),
-                              fontSize: 10,
-                              fontFamily: 'Mulish',
+                              fontSize: 10.sp,
                               fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: 0.16,
+                            ),
                             ),
                           ),
                         ),
@@ -151,8 +150,8 @@ class _Screen2State extends State<Screen2> {
                         width: 10.w,
                       ),
                       Container(
-                        width: 78,
-                        height: 30,
+                        width: 78.w,
+                        height: 30.w,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 4),
                         decoration: ShapeDecoration(
@@ -164,13 +163,13 @@ class _Screen2State extends State<Screen2> {
                         child: Center(
                           child: Text(
                             'Action',
-                            style: TextStyle(
+                            style: GoogleFonts.mulish(
+                              textStyle: TextStyle(
                               color: Color(0xFF87A3E8),
-                              fontSize: 10,
+                              fontSize: 10.sp,
                               fontFamily: 'Mulish',
                               fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: 0.16,
+                              )
                             ),
                           ),
                         ),
@@ -179,8 +178,8 @@ class _Screen2State extends State<Screen2> {
                         width: 10.w,
                       ),
                       Container(
-                        width: 78,
-                        height: 30,
+                        width: 78.w,
+                        height: 30.h,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 4),
                         decoration: ShapeDecoration(
@@ -192,13 +191,12 @@ class _Screen2State extends State<Screen2> {
                         child: Center(
                           child: Text(
                             'Action',
-                            style: TextStyle(
+                            style: GoogleFonts.mulish(
+                              textStyle: TextStyle(
                               color: Color(0xFF87A3E8),
-                              fontSize: 10,
-                              fontFamily: 'Mulish',
+                              fontSize: 10.sp,
                               fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: 0.16,
+                              )
                             ),
                           ),
                         ),
@@ -212,13 +210,12 @@ class _Screen2State extends State<Screen2> {
                     children: [
                       Text(
                         'Length',
-                        style: TextStyle(
+                    style: GoogleFonts.mulish(
+                      textStyle: TextStyle(
                           color: Color(0xFF9B9B9B),
-                          fontSize: 14,
-                          fontFamily: 'Mulish',
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
-                          height: 0,
-                          letterSpacing: 0.24,
+                      ),
                         ),
                       ),
                       SizedBox(
@@ -226,13 +223,12 @@ class _Screen2State extends State<Screen2> {
                       ),
                       Text(
                         'Language',
-                        style: TextStyle(
+                        style: GoogleFonts.mulish(
+                            textStyle: TextStyle(
                           color: Color(0xFF9B9B9B),
-                          fontSize: 14,
-                          fontFamily: 'Mulish',
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
-                          height: 0,
-                          letterSpacing: 0.24,
+                        )
                         ),
                       ),
                       SizedBox(
@@ -240,13 +236,12 @@ class _Screen2State extends State<Screen2> {
                       ),
                       Text(
                         'Roting',
-                        style: TextStyle(
+                        style: GoogleFonts.mulish(
+                            textStyle: TextStyle(
                           color: Color(0xFF9B9B9B),
-                          fontSize: 14,
-                          fontFamily: 'Mulish',
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
-                          height: 0,
-                          letterSpacing: 0.24,
+                        )
                         ),
                       ),
                     ],
@@ -258,13 +253,12 @@ class _Screen2State extends State<Screen2> {
                     children: [
                       Text(
                         '2h 28min',
-                        style: TextStyle(
+                    style: GoogleFonts.mulish(
+                      textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 12,
-                          fontFamily: 'Mulish',
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          height: 0,
-                          letterSpacing: 0.24,
+                      ),
                         ),
                       ),
                       SizedBox(
@@ -272,27 +266,26 @@ class _Screen2State extends State<Screen2> {
                       ),
                       Text(
                         'English',
-                        style: TextStyle(
+                        style: GoogleFonts.mulish(
+                          textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 12,
-                          fontFamily: 'Mulish',
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          height: 0,
                           letterSpacing: 0.24,
                         ),
+                      ),
                       ),
                       SizedBox(
                         width: 75.w,
                       ),
                       Text(
                         'PG-13',
-                        style: TextStyle(
+                        style: GoogleFonts.mulish(
+                          textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 12,
-                          fontFamily: 'Mulish',
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          height: 0,
-                          letterSpacing: 0.24,
+                        ),
                         ),
                       ),
                     ],
@@ -302,13 +295,13 @@ class _Screen2State extends State<Screen2> {
                   padding: const EdgeInsets.only(top: 520, left: 20),
                   child: Text(
                     'Description',
-                    style: TextStyle(
+                    style: GoogleFonts.merriweather(
+                      textStyle: TextStyle(
                       color: Color(0xFF110E47),
-                      fontSize: 18,
-                      fontFamily: 'Merriweather',
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.w900,
-                      height: 0,
                       letterSpacing: 0.32,
+                    ),
                     ),
                   ),
                 ),
@@ -316,12 +309,12 @@ class _Screen2State extends State<Screen2> {
                   padding: const EdgeInsets.only(top: 550, left: 20),
                   child: Text(
                     "With Spider-Man's identity now revealed, Peter asks\n Doctor Strange for help. When a spell goes wrong\n dangerous foes from other worlds start to appear\n forcing Peter to discover what it truly means to be\n Spider-Man.",
-                    style: TextStyle(
+                    style: GoogleFonts.mulish(
+                      textStyle: TextStyle(
                       color: Color(0xFF9B9B9B),
-                      fontSize: 13,
-                      fontFamily: 'Mulish',
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w400,
-                      letterSpacing: 0.24,
+                      )
                     ),
                   ),
                 ),
@@ -331,17 +324,16 @@ class _Screen2State extends State<Screen2> {
                     children: [
                       Text(
                         'Cast',
-                        style: TextStyle(
+                    style: GoogleFonts.merriweather(
+                      textStyle: TextStyle(
                           color: Color(0xFF110E47),
-                          fontSize: 18,
-                          fontFamily: 'Merriweather',
+                          fontSize: 18.sp,
                           fontWeight: FontWeight.w900,
-                          height: 0,
-                          letterSpacing: 0.32,
+                        ),
                         ),
                       ),
                       SizedBox(
-                        width: 185,
+                        width: 185.w,
                       ),
                       Container(
                         width: 80.w,
@@ -350,21 +342,21 @@ class _Screen2State extends State<Screen2> {
                           shape: RoundedRectangleBorder(
                             side:
                                 BorderSide(width: 1, color: Color(0xFFE5E4EA)),
-                            borderRadius: BorderRadius.circular(100),
+                            borderRadius: BorderRadius.circular(100.r),
                           ),
                         ),
                         child: Center(
                           child: Text(
                             'See more',
-                            textAlign: TextAlign.right,
-                            style: TextStyle(
+                            style: GoogleFonts.mulish(
+                              textStyle:TextStyle(
                               color: Color(0xFFAAA8B0),
                               fontSize: 16.sp,
-                              fontFamily: 'Mulish',
                               fontWeight: FontWeight.w400,
                             ),
                           ),
                         ),
+                      ),
                       ),
                     ],
                   ),
@@ -376,17 +368,17 @@ class _Screen2State extends State<Screen2> {
                       Stack(
                         children: [
                           Container(
-                            height: 120,
-                            width: 80,
+                            height: 120.h,
+                            width: 80.w,
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5)),
+                                  borderRadius: BorderRadius.circular(5.r)),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 40),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5.r),
                                 child: Image.asset(
                                   "assets/c.png",
                                 ),
@@ -397,33 +389,32 @@ class _Screen2State extends State<Screen2> {
                             padding: const EdgeInsets.only(top: 90),
                             child: Text(
                               'Tom Holland',
-                              style: TextStyle(
+                              style: GoogleFonts.mulish(
+                                textStyle: TextStyle(
                                 color: Color(0xFF110E47),
-                                fontSize: 12,
-                                fontFamily: 'Mulish',
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                height: 0,
-                                letterSpacing: 0.24,
+                                )
                               ),
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(width: 10.w,),
                       Stack(
                         children: [
                           Container(
-                            height: 120,
-                            width: 80,
+                            height: 120.h,
+                            width: 80.w,
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5)),
+                                  borderRadius: BorderRadius.circular(5.r)),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 40),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5.r),
                                 child: Image.asset(
                                   "assets/d.png",
                                 ),
@@ -435,34 +426,33 @@ class _Screen2State extends State<Screen2> {
                             padding: const EdgeInsets.only(top: 90,left: 10),
                             child: Text(
                               'Zendaya',
-                              style: TextStyle(
+                              style: GoogleFonts.mulish(
+                                textStyle: TextStyle(
                                 color: Color(0xFF110E47),
-                                fontSize: 12,
-                                fontFamily: 'Mulish',
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                height: 0,
                                 letterSpacing: 0.24,
-                              ),
+                              ),),
                             ),
                           ),
                         ],
                       ),
 
-                      SizedBox(width: 10,),
+                      SizedBox(width: 10.w),
                       Stack(
                         children: [
                           Container(
-                            height: 120,
-                            width: 80,
+                            height: 120.h,
+                            width: 80.w,
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5)),
+                                  borderRadius: BorderRadius.circular(5.r)),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 40),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5.r),
                                 child: Image.asset(
                                   "assets/e.png",
                                 ),
@@ -474,34 +464,34 @@ class _Screen2State extends State<Screen2> {
                             padding: const EdgeInsets.only(top:86,left: 1),
                             child: Text(
                               'Benedict\nCumberbatch',
-                              style: TextStyle(
+                              style: GoogleFonts.mulish(
+                                textStyle: TextStyle(
                                 color: Color(0xFF110E47),
-                                fontSize: 12,
-                                fontFamily: 'Mulish',
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                height: 0,
                                 letterSpacing: 0.24,
+                                ),
                               ),
                             ),
                           ),
                         ],
                       ),
 
-                      SizedBox(width: 10,),
+                      SizedBox(width: 10.w,),
                       Stack(
                         children: [
                           Container(
-                            height: 120,
-                            width: 80,
+                            height: 120.h,
+                            width: 80.w,
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5)),
+                                  borderRadius: BorderRadius.circular(5.r)),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 40),
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5.r),
                                 child: Image.asset(
                                   "assets/f.png",
                                 ),
@@ -513,16 +503,14 @@ class _Screen2State extends State<Screen2> {
                             padding: const EdgeInsets.only(top: 85,left: 20),
                             child: Text(
                               'Jacon\nBatalon',
-                              style: TextStyle(
+                              style: GoogleFonts.mulish(
+                                textStyle: TextStyle(
                                 color: Color(0xFF110E47),
-                                fontSize: 12,
-                                fontFamily: 'Mulish',
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
-                                height: 0,
-                                letterSpacing: 0.24,
                               ),
                             ),
-                          ),
+                          ),)
                         ],
                       ),
 
