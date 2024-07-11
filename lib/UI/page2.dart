@@ -73,7 +73,7 @@ class _Screen2State extends State<Screen2> {
                         ),
                       ),
                       SizedBox(
-                        width: 100.w,
+                        width: 90.w,
                       ),
                       Icon(
                         Icons.bookmark_border_sharp,
